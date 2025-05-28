@@ -1,0 +1,98 @@
+html, body {
+    height: 100%;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.type {
+    background: #ffd30c;
+    position: absolute;
+    right: 0;
+    padding: 5px 11px;
+    font-weight: 600;
+    top: 0px;
+    font-size: 13px;
+    padding-left: 20px;
+    border-bottom-left-radius: 300px;
+}
+
+.container {
+    border: 1px solid #a8a8a0;
+    position: relative;
+    padding: 12px;
+    background: #fff;
+    margin: 10px 40px;
+}
+
+.section{
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-top: 25px;
+    color: #030a81;
+}
+
+.item {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    width: 400px;
+}
+
+.clock{
+    height: 12px;
+    color: gray;
+}
+
+.timing{
+    font-size: 10px;
+    color: gray;
+}
+
+.applybutton{
+    margin-top: 12px;
+    margin-bottom: 9px;
+    padding: 7px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #00b7b7 !important;
+    display: inline-block;
+    width: 100%;
+    transition: all 1.5sease-out;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjusts to have 4 columns */
+    column-gap: 15px; /* Space between the columns */
+    row-gap: 20px; /* Space between the rows */
+}
+
+.item {
+    margin: 0; /* Remove margins that might affect layout */
+    width: 100%; /* Make each itemtake full width of its container */
+}
+   
+.item {
+    margin: 0; /* Remove margins that might affect layout */
+    width: 100%; /* Make each item take full width of its container */
+    height: 300px; /* Set a fixed height for all items */
+    display: flex; /* Use flexbox to align content */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space out children evenly */
+}
+
+.container {
+    border: 1px solid #a8a8a0;
+    position: relative;
+    padding: 12px;
+    background: #fff;
+    margin: 10px 0; /* Adjust margin to center items in the grid */
+    flex: 1; /* Allow the container to grow and fill the item */
+}
